@@ -1,0 +1,21 @@
+<div align="center">
+<style>
+	body {background-color: #FF7133 ;}
+	h1   {color: white;}
+	h2   {color: white;}
+	h3   {color: white;}
+	</style>
+
+<h1><%= @player.name %> vs. Computer </h1><br><br>
+
+<h2> Take your pick ... </h2>
+
+<form action="/choice" method="POST" class="play">
+	<button name="choice" value="rock">Rock</button>
+	<button name="choice" value="paper">Paper</button>
+	<button name="choice" value="scissors">Scissors</button>
+	<input type="hidden" name="name" value=<%= @player %>
+
+</form>
+
+</div>

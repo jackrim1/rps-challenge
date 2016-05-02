@@ -1,0 +1,23 @@
+<div align="center">
+<style>
+	body {background-color: #FF7133 ;}
+	h1   {color: white;}
+	h2   {color: white;}
+	h3   {color: white;}
+	</style>
+<br><br>
+	
+	<h3> You chose: <%= @player.state %> </h3>
+	<h3> The computer chose: <%= @computer.state %> </h3>
+
+	<%if @game.result == "Draw!" %>
+		<h1> Draw! </h1>
+
+	<%elsif @game.result == @game.player_1 %>
+		<h1> You won! </h1>
+
+	<%else @game.result == @game.player_2 %>
+		<h1> The computer won! </h1>
+	<%end%>
+
+</div>
