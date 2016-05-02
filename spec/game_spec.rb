@@ -25,7 +25,6 @@ describe Game do
 		it 'confirms the correct winner' do
 			expect(game.result).to eq player_2
 		end
-		
 	end
 
 
